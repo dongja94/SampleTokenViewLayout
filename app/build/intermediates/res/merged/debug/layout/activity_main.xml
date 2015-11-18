@@ -15,7 +15,28 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:id="@+id/btn_add" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="remove"
+            android:id="@+id/btn_remove" />
+    </LinearLayout>
+
     <com.example.sampletokenviewlayout.TokenLayout
+        android:id="@+id/token_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#AAAAAA" >
@@ -94,4 +115,4 @@
 
     </com.example.sampletokenviewlayout.TokenLayout>
 
-</LinearLayout><!-- From: file:/C:/Android/Library/android-education-project/SampleTokenViewLayout1/app/src/main/res/layout/activity_main.xml -->
+</LinearLayout><!-- From: file:/C:/Work/workspace2-8/SampleTokenViewLayout/app/src/main/res/layout/activity_main.xml -->

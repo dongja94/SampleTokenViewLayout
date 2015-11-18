@@ -39,6 +39,9 @@ public class TokenLayout extends FrameLayout {
 
 		for (int i = 0; i < getChildCount(); i++) {
 			View v = getChildAt(i);
+			if (v.getVisibility() == View.GONE) {
+				continue;
+			}
 			LayoutParams params = (LayoutParams) v.getLayoutParams();
 			int childWidth = v.getMeasuredWidth() + params.leftMargin
 					+ params.rightMargin;
@@ -76,6 +79,9 @@ public class TokenLayout extends FrameLayout {
 		int maxHeight = 0;
 		for (int i = 0; i < getChildCount(); i++) {
 			View child = getChildAt(i);
+			if (child.getVisibility() == View.GONE) {
+				continue;
+			}
 			LayoutParams params = (LayoutParams) child.getLayoutParams();
 			int childWidth = child.getMeasuredWidth() + params.leftMargin
 					+ params.rightMargin;
